@@ -9,12 +9,14 @@
 #define TESTUTILS_H_
 
 #include <Util/UI/Window.h>
+#include "../Core/Device.h"
 
 #include <memory>
 
 class TestUtils {
 public:
 	static std::unique_ptr<Util::UI::Window> window;
+	static Rendering::Device::Ref device;
 };
 
 #endif /* TESTUTILS_H_ */
